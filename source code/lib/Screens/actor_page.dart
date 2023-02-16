@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/colors.dart';
+import 'package:harry_potter_character/Models/color_constants.dart';
 import 'package:provider/provider.dart';
 import '../Models/character.dart';
 import '../Widgets/person_card.dart';

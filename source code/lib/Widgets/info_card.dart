@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/colors.dart';
+import 'package:harry_potter_character/Models/color_constants.dart';
 
 class InfoCard extends StatelessWidget {
   final String actorInfo;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../Models/colors.dart';
+import '../Models/color_constants.dart';
 import '../Widgets/person_card.dart';
 import '../providers/character_provider.dart';
 import 'package:provider/provider.dart';
