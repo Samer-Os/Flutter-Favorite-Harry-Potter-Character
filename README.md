@@ -1,16 +1,13 @@
-# harry_potter_character
+# About the app
 
-A new Flutter project.
+In this app we use an API to fetch our favorite character's informations in 'Harry Potter' serie
 
-## Getting Started
+## Youtube video link
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## ScreenShots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- the character's info screen:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
