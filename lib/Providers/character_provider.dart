@@ -11,7 +11,7 @@ class CharacterProvider extends ChangeNotifier {
     gender: 'male',
     yearOfBirth: '2000',
     actor: 'Developper',
-    imageUrl: 'https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character/blob/main/images/IMG_2322.png',
+    imageUrl: 'images/oussama.jpeg',
   );
   Character actor = Character(
     name: '',
