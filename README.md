@@ -4,10 +4,22 @@ In this app we use an API to fetch our favorite character's informations in 'Har
 
 ## Youtube video link
 
-This project is a starting point for a Flutter application.
+- https://www.youtube.com/watch?v=C-vpV1U-lBY
 
 ## ScreenShots
 
-- the character's info screen:
+- My info screen:
 
+![screenshots\myProfileScreen.png](https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character-App/blob/main/Screenshots/myProfileScreen.png)
 
+- Harry Potter info screen:
+
+![screenshots\myProfileScreen.png](https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character-App/blob/main/Screenshots/myProfileScreen.png)
+
+- Hermione Granger info screen:
+
+![screenshots\myProfileScreen.png](https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character-App/blob/main/Screenshots/myProfileScreen.png)
+
+- Ron Weasley info screen:
+
+![screenshots\myProfileScreen.png](https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character-App/blob/main/Screenshots/myProfileScreen.png)
