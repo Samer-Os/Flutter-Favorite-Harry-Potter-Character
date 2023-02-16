@@ -11,7 +11,7 @@ class CharacterProvider extends ChangeNotifier {
     gender: 'male',
     yearOfBirth: '2000',
     actor: 'Developper',
-    imageUrl: 'images/oussama.jpeg',
+    imageUrl: 'https://i.ibb.co/sgPSWfG/oussama.png',
   );
   Character actor = Character(
     name: '',

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:harry_potter_character/Models/colors.dart';
 
 class InfoCard extends StatelessWidget {
-  final actorInfo;
-  final info;
+  final String actorInfo;
+  final String info;
 
   const InfoCard({Key? key, required this.actorInfo, required this.info})
       : super(key: key);
