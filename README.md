@@ -28,7 +28,7 @@ In this app we use an API to fetch our favorite character's informations in 'Har
 
 - The error message when the hard coded character name does not exist:
 
-![screenshots\myProfileScreen.png](https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character-App/blob/main/Screenshots/errorScreen.png)
+![screenshots\myProfileScreen.png](https://github.com/Samer-Os/Flutter-Favorite-Harry-Potter-Character-App/blob/main/Screenshots/errorMessage.png)
 
 - After clicking on 'tamam', the screen below shows up:
 
