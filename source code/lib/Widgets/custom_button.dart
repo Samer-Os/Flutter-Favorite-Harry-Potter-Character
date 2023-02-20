@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:harry_potter_character/Screens/actor_page.dart';
 import 'package:harry_potter_character/Screens/my_page.dart';
 
-import '../Models/colors.dart';
+import '../Models/color_constants.dart';
 
 class CustomButton extends StatelessWidget {
   final String buttonText;

@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/colors.dart';
+import 'package:harry_potter_character/Models/color_constants.dart';
 
 import 'custom_button.dart';
 import 'info_card.dart';
