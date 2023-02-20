@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/color_constants.dart';
+import 'package:harry_potter_character/Models/colors.dart';
 
 class InfoCard extends StatelessWidget {
   final String actorInfo;
@@ -49,7 +49,7 @@ class InfoCard extends StatelessWidget {
                       bottomRight: Radius.circular(15),
                     ),
                   ),
-                  width: constraints.maxWidth * 0.5,
+                  width: constraints.maxWidth * 0.58,
                   child: Text(
                     actorInfo,
                     overflow: TextOverflow.ellipsis,

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/color_constants.dart';
-import 'package:provider/provider.dart';
+import 'package:get/get.dart';
+import 'package:harry_potter_character/Models/colors.dart';
 import '../Models/character.dart';
 import '../Widgets/person_card.dart';
-import '../providers/character_provider.dart';
+import '../Controllers/character_controller.dart';
 import 'my_page.dart';
 
 class ActorPage extends StatefulWidget {
@@ -15,6 +15,7 @@ class ActorPage extends StatefulWidget {
 
 class _ActorPageState extends State<ActorPage> {
   late Future fetchData;
+  CharacterController characterController = Get.find();
   Character actor = Character(
     name: '',
     species: '',
@@ -26,9 +27,7 @@ class _ActorPageState extends State<ActorPage> {
 
   @override
   void initState() {
-    fetchData = Provider.of<CharacterProvider>(context, listen: false)
-        .fetchActorInfo()
-        .catchError((error) {
+    fetchData = characterController.fetchActorInfo().catchError((error) {
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
@@ -55,8 +54,7 @@ class _ActorPageState extends State<ActorPage> {
 
   @override
   Widget build(BuildContext context) {
-    String actorName =
-        Provider.of<CharacterProvider>(context, listen: false).actorName;
+    String actorName = characterController.actorName;
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -72,7 +70,7 @@ class _ActorPageState extends State<ActorPage> {
                 child: CircularProgressIndicator(),
               );
             }
-            actor = Provider.of<CharacterProvider>(context, listen: false).actor;
+            actor = characterController.actor;
             return actor.name.isEmpty
                 ? const Center(
                     child: Text('Bir hata oluştu'),
@@ -83,7 +81,6 @@ class _ActorPageState extends State<ActorPage> {
                       person: actor,
                       isMe: false,
                       buttonText: 'Show My Profile',
-                      routeName: Mypage.routeName,
                     ),
                   );
           },

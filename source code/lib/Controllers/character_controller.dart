@@ -1,10 +1,10 @@
 import 'dart:convert';
-import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/character.dart';
+import 'package:get/get.dart';
+import '../Models/character.dart';
 import 'package:http/http.dart' as http;
 
-class CharacterProvider extends ChangeNotifier {
-  String actorName = 'Harry Potter';
+class CharacterController extends GetxController {
+  String actorName = 'Hermione Granger';
   Character myInfo = Character(
     name: 'Oussama Samer',
     species: 'human',
@@ -42,7 +42,7 @@ class CharacterProvider extends ChangeNotifier {
       actor.yearOfBirth = actorInfo['yearOfBirth'].toString();
       actor.imageUrl = actorInfo['image'].toString();
       actor.actor = actorInfo['actor'].toString();
-      notifyListeners();
+      update();
     } catch (error) {
       rethrow;
     }

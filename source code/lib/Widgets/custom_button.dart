@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:harry_potter_character/Screens/actor_page.dart';
+import 'package:harry_potter_character/Screens/my_page.dart';
 
-import '../Models/color_constants.dart';
+import '../Models/colors.dart';
 
 class CustomButton extends StatelessWidget {
   final String buttonText;
-  final String routeName;
   final bool isMe;
 
-  const CustomButton(
-      {Key? key,
-      required this.buttonText,
-      required this.routeName,
-      required this.isMe})
+  const CustomButton({Key? key, required this.buttonText, required this.isMe})
       : super(key: key);
 
   List<Widget> arrow() {
@@ -40,7 +38,15 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
       onPressed: () {
-        Navigator.of(context).pushReplacementNamed(routeName);
+        !isMe
+            ? Get.off(
+                const Mypage(),
+                transition: Transition.rightToLeft,
+              )
+            : Get.off(
+                const ActorPage(),
+                transition: Transition.leftToRight,
+              );
       },
       style: OutlinedButton.styleFrom(
         side: const BorderSide(

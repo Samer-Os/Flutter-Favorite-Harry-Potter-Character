@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
-import '../Models/color_constants.dart';
+import 'package:get/get.dart';
+import '../Models/colors.dart';
 import '../Widgets/person_card.dart';
-import '../providers/character_provider.dart';
-import 'package:provider/provider.dart';
+import '../Controllers/character_controller.dart';
 
 class Mypage extends StatelessWidget {
   const Mypage({Key? key}) : super(key: key);
-  static const routeName = 'myPageRoute';
 
   @override
   Widget build(BuildContext context) {
-    final myInfo =
-        Provider.of<CharacterProvider>(context, listen: false).myInfo;
+    final myInfo = Get.find<CharacterController>().myInfo;
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
@@ -25,7 +23,6 @@ class Mypage extends StatelessWidget {
             person: myInfo,
             isMe: true,
             buttonText: 'Go Back To Character Profile',
-            routeName: '/',
           ),
         ),
       ),

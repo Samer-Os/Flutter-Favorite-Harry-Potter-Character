@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:harry_potter_character/Models/color_constants.dart';
+import 'package:harry_potter_character/Models/colors.dart';
 
 import 'custom_button.dart';
 import 'info_card.dart';
@@ -8,14 +8,12 @@ import 'info_card.dart';
 class PersonCard extends StatelessWidget {
   final person;
   final bool isMe;
-  final String routeName;
   final String buttonText;
 
   const PersonCard({
     Key? key,
     required this.person,
     required this.isMe,
-    required this.routeName,
     required this.buttonText,
   }) : super(key: key);
 
@@ -86,7 +84,7 @@ class PersonCard extends StatelessWidget {
           height: 35,
         ),
         CustomButton(
-            buttonText: buttonText, routeName: routeName, isMe: isMe),
+            buttonText: buttonText, isMe: isMe),
       ],
     );
   }
