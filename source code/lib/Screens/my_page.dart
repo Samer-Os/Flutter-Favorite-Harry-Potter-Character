@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../Models/colors.dart';
+import '../Models/color_constants.dart';
 import '../Widgets/person_card.dart';
 import '../Controllers/character_controller.dart';
 

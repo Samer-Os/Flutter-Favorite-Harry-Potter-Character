@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:harry_potter_character/Models/colors.dart';
+import 'package:harry_potter_character/Models/color_constants.dart';
 import '../Models/character.dart';
 import '../Widgets/person_card.dart';
 import '../Controllers/character_controller.dart';
-import 'my_page.dart';
 
 class ActorPage extends StatefulWidget {
   const ActorPage({Key? key}) : super(key: key);
